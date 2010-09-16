@@ -1,0 +1,30 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3240
+
+This plugin creates a new buffer with an outline view of all folds in the current buffer.
+It is based on vimscript #732.
+Usage:
+	:FoldDigest
+
+   Transform all folds in the current buffer into digest tree form, and
+   show it in another buffer.  The buffer is called ==FOLDDIGEST==.  It shows
+   not only all fold start positions, but also a tree depended on original
+   folds hierarchy.
+
+   In a FOLDDIGEST, you can move around the cursor, and when type <CR> jump
+   to fold at under it.  If you enter FOLDDIGEST window from other windows,
+   when depended buffer is availabeled, it will be synchronized
+   automatically.  If you want to force synchronize, type "r" in a
+   FOLDDIGEST buffer.
+   It is also possible to jump to the folsd under the cursor with a double
+   click.
+   The FOLDDIGEST window is updated when entering in a new buffer.
+
+   :FoldDigestToggle
+
+   Toggles FOLDDIGEST window
+
+   :FoldDigestClose
+
+   close FOLDDIGEST window
+
+   You can also map your own keys to these commands
